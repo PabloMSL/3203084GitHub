@@ -8,8 +8,8 @@ print(type(edad))
 #Se quiere conocer la edad de la hija menor la cual es la mitad de la de la mayor restandole un cuarto de la del medio
 edad = 30
 edad2 = 40 
-operacion1 = edad2//2
-operacion2 = edad1//4
+operacion1 = 'edad2'//2
+operacion2 = 'edad1'//4
 operacion3 = operacion1 - operacion2
 edad3 = operacion3
 
