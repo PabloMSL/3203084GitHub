@@ -20,7 +20,7 @@ if rta and rta2 == "Si" and edad > 18:
     print(f"Nombre: {nombre}")
     print(f"Edad: {edad}")
     print("\n Esta aprobado para el trabajo")
-else 
+else:
    print("\n ==== Datos del Postulado ====")
    print(f"Nombre: {nombre}")
    print(f"Edad: {edad}")
