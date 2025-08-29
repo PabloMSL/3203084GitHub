@@ -1,0 +1,65 @@
+import inventario
+import facturacion
+
+def menu():
+    while True:
+        print("\n--- MENÚ PRINCIPAL ---")
+        print("1. Gestión de Inventario")
+        print("2. Facturación")
+        print("3. Salir")
+        op = input("Opción: ")
+        if op == '1':
+            menu_inventario()
+        elif op == '2':
+            menu_facturacion()
+        elif op == '3':
+            break
+        else:
+            print("Opción inválida.")
+
+def menu_inventario():
+    while True:
+        print("\n--- INVENTARIO ---")
+        print("1. Añadir producto")
+        print("2. Listar productos")
+        print("3. Buscar producto")
+        print("4. Actualizar producto")
+        print("5. Eliminar producto")
+        print("6. Volver")
+        op = input("Opción: ")
+        if op == '1':
+            inventario.agregar_producto()
+        elif op == '2':
+            inventario.listar_productos()
+        elif op == '3':
+            inventario.buscar_producto()
+        elif op == '4':
+            inventario.actualizar_producto()
+        elif op == '5':
+            inventario.eliminar_producto()
+        elif op == '6':
+            break
+        else:
+            print("Opción inválida.")
+
+def menu_facturacion():
+    while True:
+        print("\n--- FACTURACIÓN ---")
+        print("1. Crear factura")
+        print("2. Listar facturas")
+        print("3. Eliminar factura")
+        print("4. Volver")
+        op = input("Opción: ")
+        if op == '1':
+            facturacion.crear_factura()
+        elif op == '2':
+            facturacion.listar_facturas()
+        elif op == '3':
+            facturacion.eliminar_factura()
+        elif op == '4':
+            break
+        else:
+            print("Opción inválida.")
+
+if __name__ == "__main__":
+    menu()
